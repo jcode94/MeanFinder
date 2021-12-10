@@ -76,4 +76,6 @@ Deviation from true mean: -0.8320000000000007
 ```
 
 Note the minimization of the computed deviation from true mean. As more randomly-selected elements are used to balance out the rich mean,
-our calculation of the difference between rich mean and true mean decreases.
+our calculation of the difference between rich mean and true mean decreases. Consider that beyond n-1 iterations, where n is the number of elements
+in the collection, it becomes more efficient to use the true mean, which is computed from n elements. The tradeoff in using this probabilistic mean
+approximator is the exchange of computation for precision.
