@@ -30,8 +30,9 @@ public class MeanFinder
 
         RichList texList = new RichList(randList);
 
-        System.out.format("Actual Mean: %s\n", (texList.getMean()).toString());
+        System.out.format("TRUE MEAN: %s\n\n", (texList.getMean()).toString());
         System.out.format("Approximations:\n");
+        System.out.format("==============================\n");
 
         int numCycles;
         Double opRes = texList.pick5Mean(numCycles = 100);
@@ -85,7 +86,7 @@ class RichList
 
         for (int i = 0; i < iter; i++)
         {
-            System.out.format("#%d: ", i);
+            System.out.format("Iter#%d: ", i);
             for (int j = 0; j < 5; j++)
             {
                 // Compute
