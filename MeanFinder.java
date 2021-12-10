@@ -62,7 +62,7 @@ class RichList
     {
         coll = list;
         mean = Double.valueOf(0);
-        mean = Double.valueOf(0);
+        sum = Double.valueOf(0);
         if (list.size() != 0)
         {
             for (Integer val : list)
